@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Emergency Contacts App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  </head>
+  <body>
+    <!-- <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
+    </nav> -->
+
+    <header>
+      <nav>
+        <ul>
+          <li><a th:href="@{/}"> EmergencyCall </a></li>
+
+          <li><a th:href="@{/contacts}"> Contacts </a></li>
+
+          <li><a th:href="@{/contacts/new}"> + New </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Welcome!</h1>
+      </section>
+    </main>
+  </body>
+</html>
