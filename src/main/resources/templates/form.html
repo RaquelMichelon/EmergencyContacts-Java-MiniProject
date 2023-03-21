@@ -35,11 +35,11 @@
 
       <section>
         <form
-          th:action="${contato.novo} ? @{/contatos} : @{/contatos/{contato}(contato=${contato.id})}"
-          th:object="${contato}"
-          th:method="${contato.novo} ? post : put"
+          th:action="${contact.new} ? @{/contacts} : @{/contacts/{contact}(contact=${contact.id})}"
+          th:object="${contact}"
+          th:method="${contact.new} ? post : put"
         >
-          <div th:if="${!contato.novo}">
+          <div th:if="${!contact.new}">
             <label>Code: </label>
 
             <input th:field="*{id}" readonly="readonly" />
@@ -48,13 +48,13 @@
           <div>
             <label>Name: </label>
 
-            <input th:field="*{nome}" />
+            <input th:field="*{name}" />
           </div>
 
           <div>
             <label>Phone: </label>
 
-            <input th:field="*{telefone}" />
+            <input th:field="*{phone}" />
           </div>
 
           <div>

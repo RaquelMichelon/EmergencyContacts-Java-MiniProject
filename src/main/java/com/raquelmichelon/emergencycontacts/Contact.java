@@ -16,6 +16,10 @@ public class Contact {
 		this.name = name;
 		this.phone = phone;
 	}
+	
+	public boolean isNew() {
+		return id == null;
+	}
 
 	public String getId() {
 		return id;

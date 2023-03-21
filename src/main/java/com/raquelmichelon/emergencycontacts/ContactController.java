@@ -32,9 +32,11 @@ public class ContactController {
 		return modelAndView;
 	}
 	
-//	@GetMapping("/contacts/new")
-//	public String new() {
-//		return "form";
-//	}
+	@GetMapping("/contacts/new")
+	public ModelAndView addNew() {
+		ModelAndView modelAndView = new ModelAndView("form");
+		modelAndView.addObject("contact", new Contact());
+		return modelAndView;
+	}
 
 }
